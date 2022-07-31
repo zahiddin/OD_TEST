@@ -19,8 +19,10 @@
 
 
 3. находясь на директории где расположен docker-compose.yml файл то есть /test_proj, запустить docker compose командой:
-
- docker compose up --build -d
+docker compose up --build -d
+ 
+4. Зайти в контейнер od_test_proj и создать там суперюзера:
+python3 manage.py createsuperuser
 
 
 
