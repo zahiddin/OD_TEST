@@ -28,7 +28,7 @@ test proj
             python3 manage.py createsuperuser
 
 5. все апишки доступны по ссылке 
-6. 
+
             http://0.0.0.0:8000/swagger/
             
 ПРИМЕЧАНИЕ: Чтобы использовать апишку http://0.0.0.0:8000/searchstudents/ для поиска студентов, надо отправить пост запрос с querry param в постмане. в params ввести search = 'Азамат' либо в самой апишке например http://0.0.0.0:8000/searchstudents/?search=Azamat
