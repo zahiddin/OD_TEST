@@ -24,6 +24,14 @@ docker compose up --build -d
 4. Зайти в контейнер od_test_proj и создать там суперюзера:
 python3 manage.py createsuperuser
 
+5. все апишки доступны по ссылке http://0.0.0.0:8000/swagger/
+
+ПРИМЕЧАНИЕ:
+Чтобы использовать апишку http://0.0.0.0:8000/searchstudents/ для поиска студентов, надо отправить пост запрос с querry param в постмане. в params ввести search = 'Азамат' либо в самой апишке например http://0.0.0.0:8000/searchstudents/?search=Azamat
+
+
+
+
 
 
 ЧТОБЫ ЗАПУСТИТЬ ПРОЕКТ ЛОКАЛЬНО ИСПОЛЬЗУЯ VIRTUALENV:
