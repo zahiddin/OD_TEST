@@ -2,7 +2,7 @@
 
 *После того как проект уже спулен с гита*
 
-в главной директории проекта создать файл .env и вписать следующие ключи:
+1. в главной директории проекта создать файл .env и вписать следующие ключи:
 
 * ALLOWED_HOSTS='*'
 * DEBUG=on
@@ -12,7 +12,8 @@
 * EMAIL_HOST_PASSWORD='Уникальный пароль для приложения mail.ru' если нет то создать приложение и выданный пароль 
 вписать в ключ EMAIL_HOST_PASSWORD, подробнее на https://help.mail.ru/mail/security/protection/external
 
-запустить docker compose командой
+
+2. запустить docker compose командой
 
  docker compose up --build -d
 
