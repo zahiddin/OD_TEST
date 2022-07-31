@@ -6,6 +6,7 @@ from django.contrib.auth import authenticate
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 from django.core.mail import EmailMessage
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from school.models import Student, Teacher
 from school.serializers import TeacherRegisterSerializer, TeacherLoginSerializer, StudentSerializer, \
@@ -41,10 +42,12 @@ class StudentView(ModelViewSet):
     serializer_class = StudentSerializer
     queryset = Student.objects.all()
     lookup_field = 'pk'
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
 
 class SendEmailsView(CreateAPIView):
     serializer_class = SendEmailsSerializer
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def create(self, request, *args, **kwargs):
         teacher_id = request.user.id
@@ -62,5 +65,5 @@ class SearchStudentView(ListCreateAPIView):
     filter_backends = (filters.SearchFilter,)
     queryset = Student.objects.all()
     serializer_class = SearchStudentSerializer
-
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 

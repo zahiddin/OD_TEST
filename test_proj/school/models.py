@@ -38,6 +38,10 @@ class Teacher(AbstractUser):
     USERNAME_FIELD = 'phone'
     REQUIRED_FIELD = []
 
+    class Meta:
+        verbose_name = "Учитель"
+        verbose_name_plural = "Учителя"
+
     def __str__(self):
         return self.phone
 
@@ -55,6 +59,10 @@ class Student(models.Model):
     )
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     photo = models.FileField('Аватарка', upload_to='student_photos/', null=True)
+
+    class Meta:
+        verbose_name = "Ученик"
+        verbose_name_plural = "Ученики"
 
     def __str__(self):
         return f'{self.full_name} {self.classgrade}'
