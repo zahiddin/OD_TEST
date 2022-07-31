@@ -14,7 +14,6 @@ test proj
             EMAIL_HOST_PASSWORD='Уникальный пароль для приложения mail.ru' '''если нет то создать приложение и выданный пароль вписать в ключ EMAIL_HOST_PASSWORD, подробнее на https://help.mail.ru/mail/security/protection/external'''
 
 2. немного подправить docker-compose.yml файл, вписать сюда те же значения что и в DATABASE_URL ключе в созданном локально .env файле:
-3. 
             POSTGRES_DB=database_name
             POSTGRES_USER=postgres_user
             POSTGRES_PASSWORD=postgres_password
