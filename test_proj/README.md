@@ -13,7 +13,7 @@
 вписать в ключ EMAIL_HOST_PASSWORD, подробнее на https://help.mail.ru/mail/security/protection/external
 
 
-2. запустить docker compose командой
+2. находясь на директории где расположен docker-compose.yml файл то есть /test_proj, запустить docker compose командой:
 
  docker compose up --build -d
 
