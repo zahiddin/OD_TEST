@@ -12,7 +12,7 @@ services:
 
   web:
     build: ./
-    container_name: motley-crew-backend
+    container_name: od_test_proj
     restart: always
     command: bash entrypoint.sh
     volumes:
