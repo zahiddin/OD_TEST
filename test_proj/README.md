@@ -55,18 +55,17 @@
             SECRET_KEY=ice2ouq4w901zww@1yl(-ljw(6_tonrly8qbj5l_r-aic6uind
             DATABASE_URL=psql://postgres_user:postgres_password@localhost:5432/database_name
             EMAIL_HOST_USER='почта@mail.ru' #обязаиельно mail.ru
-            EMAIL_HOST_PASSWORD='Уникальный пароль для приложения mail.ru' '''если нет то создать приложение и выданный пароль 
-вписать в ключ EMAIL_HOST_PASSWORD, подробнее на https://help.mail.ru/mail/security/protection/external'''
+            EMAIL_HOST_PASSWORD='Уникальный пароль для приложения mail.ru' '''если нет то создать приложение и выданный пароль вписать в ключ EMAIL_HOST_PASSWORD, подробнее на https://help.mail.ru/mail/security/protection/external'''
 
-4. миграции
+5. миграции
             
             python3 manage.py migrate
 
-5создать суперюзера
+6. создать суперюзера
             
             python3 manage.py createsuperuser
 
-6. запустить на локальном сервере
+7. запустить на локальном сервере
             
             python3 manage.py runserver
 
