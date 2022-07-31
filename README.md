@@ -23,7 +23,7 @@ test proj
 4. 
             docker compose up --build -d
 
-4. pайти в контейнер od_test_proj и создать там суперюзера:
+4. зайти в контейнер od_test_proj и создать там суперюзера:
 5. 
             python3 manage.py createsuperuser
 
