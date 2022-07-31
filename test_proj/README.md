@@ -50,12 +50,12 @@
 
 4. в главной директории проекта создать файл .env и вписать следующие ключи:
 
-ALLOWED_HOSTS='*'
-DEBUG=on
-SECRET_KEY=ice2ouq4w901zww@1yl(-ljw(6_tonrly8qbj5l_r-aic6uind
-DATABASE_URL=psql://postgres_user:postgres_password@localhost:5432/database_name
-EMAIL_HOST_USER='почта@mail.ru' #обязаиельно mail.ru
-EMAIL_HOST_PASSWORD='Уникальный пароль для приложения mail.ru' '''если нет то создать приложение и выданный пароль 
+            ALLOWED_HOSTS='*'
+            DEBUG=on
+            SECRET_KEY=ice2ouq4w901zww@1yl(-ljw(6_tonrly8qbj5l_r-aic6uind
+            DATABASE_URL=psql://postgres_user:postgres_password@localhost:5432/database_name
+            EMAIL_HOST_USER='почта@mail.ru' #обязаиельно mail.ru
+            EMAIL_HOST_PASSWORD='Уникальный пароль для приложения mail.ru' '''если нет то создать приложение и выданный пароль 
 вписать в ключ EMAIL_HOST_PASSWORD, подробнее на https://help.mail.ru/mail/security/protection/external'''
 
 4. миграции
